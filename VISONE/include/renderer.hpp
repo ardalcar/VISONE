@@ -66,10 +66,10 @@ namespace visone {
       
       // Creo la finestra
       //ogl::glWindow::create(_width, _height, title);
-      ogl::glWindow::createOffscreen(width, height);
+      ogl::glWindow::createOffscreen(_width, _height);
       
       // decido il colore dello sfondo
-      setBackgournd(color);
+      setBackground(color);
       
       DEBUG_LOG("visone::renderer(" + name + ") creation on windowID " + std::to_string(id));
       
